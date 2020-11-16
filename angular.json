@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "worksheetday02"
+    }
+  },
+  "defaultProject": "worksheetday02",
+  "cli": {
+    "analytics": false
+  }
 }

@@ -1,0 +1,23 @@
+<h1>fried fish!</h1>
+
+<input type="text" #firstnameVal [value]="firstname"/>
+
+<button (click)="onSubmit(firstnameVal.value)" [disabled]="isOk">Submit</button>
+<br>
+{{fullName}}
+<br>
+<div [style.background-color]="color">
+    <content>Background color div</content>
+</div>
+<br>
+
+<table>
+<tr *ngFor = "let val of numbers; let index = index">
+   <td [ngClass]="{'oddStyle': 0 === index % 2}">{{val}} {{0 === index % 2}}</td>
+</tr>
+</table>
+
+<br>
+<textarea (mouseover)="mouseOverFn($event)" (mouseout)="isMouseEnter=false"></textarea>
+<br>
+{{isMouseEnter}} - {{mouseCoordX}} - {{mouseCoordY}}
